@@ -91,7 +91,7 @@ class _WebScreenState extends State<WebScreen> {
                                 color: _isHovered1 ? Colors.red : Colors.grey,
                                 image: DecorationImage(
                                   image:
-                                      AssetImage("assets/images/image_1.jpg"),
+                                      AssetImage("assets/images/twitter.png"),
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -107,12 +107,14 @@ class _WebScreenState extends State<WebScreen> {
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: _isHovered2 ? Colors.red : Colors.grey,
-                                image: DecorationImage(
-                                  image:
-                                      AssetImage("assets/images/image_2.jpg"),
-                                  fit: BoxFit.cover,
-                                ),
                               ),
+                              child: Center(
+                                  child: Image.asset(
+                                "assets/images/facebook_!.png",
+                                width: 20,
+                                height: 20,
+                                    fit: BoxFit.contain,
+                              )),
                             ),
                           ),
                           MouseRegion(
@@ -204,14 +206,12 @@ class _WebScreenState extends State<WebScreen> {
     );
   }
 
-
-  Widget menuContainer(){
-
+  Widget menuContainer() {
     return Row(
       children: [
-        Icon(Icons.add_ic_call,color: Colors.white,),
-        SizedBox(width: 50,),
-        LightText(text: "Home")
+        // Image.asset("assets/images/facebook.png"),
+        //    SizedBox(width: 50,),
+        //    LightText(text: "Home")
       ],
     );
   }
