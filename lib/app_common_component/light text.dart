@@ -28,7 +28,7 @@ class LightText extends StatelessWidget {
     return Text(
       text,
       textDirection: textDirection,
-      style: GoogleFonts.raleway(
+      style: GoogleFonts.inter(
         fontSize: finalFontSize,
         fontWeight: fontWeight,
         color: textColor,
